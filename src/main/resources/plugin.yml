@@ -1,0 +1,25 @@
+name: CustomChat
+version: ${project.version}
+main: me.chatplugin.main
+api-version: 1.15
+authors: [ Jenovesan ]
+description: Chat Plugin
+commands:
+  global:
+    description: Allows your message to be seen globally by all players | Makes future messages sent in global chat
+    usage: /global <message> | /g
+    aliases: [g]
+  talk:
+    description: Allows your message to be seen by nearby players
+    usage: /talk <message>
+    aliases: [t]
+  sc:
+    description: Allows your message to be seen by staff members | Makes future messages sent in staff chat
+    usage: /sc <message> | /sc
+  ad:
+    description: Allows your message to be seen by all players and appears in special text. Costs $100
+    usage: /ad <message>
+permissions:
+  staffChat.Access:
+    description: Allows the player to view and type in staff chat
+    default: op
